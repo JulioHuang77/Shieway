@@ -461,84 +461,99 @@
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
 	
-    .contact-info ul li {
-		font-size: 18px;
+		.contact-info ul li {
+			font-size: 18px;
 		}
-    .contact-info iframe {
-    	width: 320px;
-    	height: 320px;
-    	}
-    img.production-line {
-		width: 268px;
-		height: inherit;
+		.contact-info iframe {
+			width: 320px;
+			height: 320px;
+		}
+		img.production-line {
+			width: 268px;
+			height: inherit;
 		}
     }
 
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	.intro-sector {
- 		margin: 50px 20px;
- 	}
-	p.footer-left {
-		text-align: center;
+		.intro-sector {
+			margin: 50px 20px;
 		}
-	p.footer-right {
-		margin-top: 0;
-		text-align: center;
+		p.footer-left {
+			text-align: center;
 		}
-	.googlemap {
-		text-align: center;
+		p.footer-right {
+			margin-top: 0;
+			text-align: center;
 		}
-    .contact-info iframe {
-    	width: 400px;
-    	height: 320px;
-    	margin-bottom: -40px;
-    	}
-    img.production-line {
-		margin-top: 10px;
+		.googlemap {
+			text-align: center;
 		}
-	.affix {
-		position: relative;
+		.contact-info iframe {
+			width: 400px;
+			height: 320px;
+			margin-bottom: -40px;
 		}
-	.affix + div {
-		margin-top: 0px;
+		img.production-line {
+			margin-top: 10px;
+		}
+		.affix {
+			position: relative;
+		}
+		.affix + div {
+			margin-top: 0px;
 		}
 	}
 
 	@media only screen and (max-width: 479px) {
 
-	.intro-sector {
- 		margin: 60px 20px;
- 	}
-	.contact-info iframe {
-    	width: 300px;
-    	margin-bottom: -40px;
-    	}
-    .contact-info img {
-		display: none;
-	}
-    .contact-info ul li {
-		font-size: 16px;
-		line-height: 34px;
+		.intro-sector {
+			margin: 60px 20px;
 		}
-	.contact-info ul li span {
-		line-height: 34px;
+		.contact-info iframe {
+			width: 300px;
+			margin-bottom: -40px;
 		}
-	img.logo {
-		width: 240px;
-		height: 52px;
-		margin-top: 28px;
-		margin-bottom: 15px;
+		.contact-info img {
+			display: none;
 		}
-	img.production-line {
-		margin-top: 10px;
+		.contact-info ul li {
+			font-size: 16px;
+			line-height: 34px;
 		}
-	.affix {
-		position: relative;
+		.contact-info ul li span {
+			line-height: 34px;
 		}
-	.affix + div {
-		margin-top: 0px;
+		img.logo {
+			width: 240px;
+			height: 52px;
+			margin-top: 28px;
+			margin-bottom: 15px;
+		}
+		img.production-line {
+			margin-top: 10px;
+		}
+		.affix {
+			position: relative;
+		}
+		.affix + div {
+			margin-top: 0px;
+		}
+		.contact-fancybox {
+			padding-top: 20px;
+			padding-left: 10px;
+		}
+		.contact-fancybox ul li {
+			font-size: 14px;
+			line-height: 28px;
+			font-weight: medium;
+		}
+		.contact-fancybox p {
+			margin-top: 15px;
+			font-size: 13px;
+			color: #888;
+			overflow: hidden;
 		}
 	}
 
