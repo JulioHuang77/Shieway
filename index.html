@@ -21,6 +21,9 @@
 
 	<!-- CSS
   ================================================== -->
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
   	<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
@@ -70,9 +73,6 @@
 					</li>
 					<li>
 						<a href="#product" id="button02">產品介紹</a>
-					</li>
-					<li>
-						<a href="#relative" id="button03">相關企業</a>
 					</li>
 					<li>
 						<a href="#contact" id="button04">聯絡我們</a>
@@ -161,7 +161,7 @@
 		<div class="container">
 			<div class="ten columns article">
 				<h3 class="title">自動控制閥專業設計製造</h3>
-				<p>許秋明與黃馨慧夫婦從1981年創立協瑋至今，經歷許多風雨，始終秉持一貫嚴謹精湛的製造工法，協瑋閥門一直具有高品質，以及高度的靈活性、可靠性與安全性。我們可以提供多種不同型號的產品，滿足您個性化的閥門系統解決方案需求。</p>
+				<p>許秋明與黃馨慧夫婦從1981年創立協瑋至今，經歷許多風雨，始終秉持一貫嚴謹精湛的製造工法，協瑋閥門一直具有優良品質，以及高度的靈活性、可靠性與安全性。我們可以提供多種不同型號的產品，滿足您個性化的閥門系統解決方案需求，歡迎直接洽詢。</p>
 			</div>
 			<div class="six columns fadein-hidden" style="margin-top: 20px; text-align: center;">
 				<img src="images/vt-setup.png" class="production-line" alt="關於VT"/>
@@ -293,25 +293,25 @@
 				<h3 class="title">協瑋聯絡資訊</h3>
 				<ul>
 					<li>
-						<img src="images/contact-location.png" alt="協瑋地址"/>
+						<img class="contact-icon" src="images/contact-location.png" alt="協瑋地址"/>
 						新北市蘆洲區永安南路一段162-2號
 					</li>
 					<li>
-						<img src="images/contact-mail.png" alt="電子信箱"/>
+						<img class="contact-icon" src="images/contact-mail.png" alt="電子信箱"/>
 						shie.way@msa.hinet.net
 					</li>
 					<li>
-						<img src="images/contact-phone.png" alt="聯絡電話"/>
+						<img class="contact-icon" src="images/contact-phone.png" alt="聯絡電話"/>
 						(02)82823306
 						<span>黃小姐</span>
 					</li>
 					
 					<li>
-						<img src="images/contact-fax.png" alt="傳真電話"/>
+						<img class="contact-icon" src="images/contact-fax.png" alt="傳真電話"/>
 						(02)22887850
 					</li>
 					<li>
-						<img src="images/contact-line.png" alt="LineID"/>
+						<img class="contact-icon" src="images/contact-line.png" alt="LineID"/>
 						@tvv7966z
 						<span>立即加入協瑋line帳號，產品詢問好方便！</span>
 					</li>
@@ -362,21 +362,27 @@
 						<li>
 							<i class="fa fa-location-arrow"></i> 
 							地址：<span>新北市蘆洲區永安南路一段162-2號</span>
-						</li>
-						<li>
+							</li>
+
+							<li>
 							<i class="fa fa-envelope"></i> 
 							信箱：<span>shie.way@msa.hinet.net</span>
-						</li>
-						<li>
-							
+							</li>
+
+							<li>
 							<i class="fa fa-phone"></i> 
 							電話：<span>(02) 82823306</span>
-						</li>
-						<li>
-							
+							</li>
+
+							<li>
 							<i class="fa fa-fax"></i> 
 							傳真：<span>(02) 22887850</span>
-						</li>
+							</li>
+
+							<li>
+							<img style="width: 14px; height: 14px" src="images/contact-line.png" alt="LineID"/> 
+							LINE：<span>@tvv7966z</span>
+							</li>
 					</ul>
 				</div>
 		</div>
@@ -459,29 +465,11 @@
 
 	<!-- scroll animation -->
 		<script type="text/javascript">
-		$("#button01").on("click", function(e){
-  			$('body').animate({
-    			scrollTop: $("#about").offset().top-104
-  			}, 750);
- 		 	e.preventDefault();
-		});
-		$("#button02").on("click", function(e){
-  			$('body').animate({
-    			scrollTop: $("#product").offset().top-104
-  			}, 750);
- 		 	e.preventDefault();
-		});
-		$("#button03").on("click", function(e){
-  		$('body').animate({
-    			scrollTop: $("#relative").offset().top-104
-  			}, 750);
- 			e.preventDefault();
-		});
-		$("#button04").on("click", function(e){
-  		$('body').animate({
-    			scrollTop: $("#contact").offset().top-104
-  			}, 750);
- 		 	e.preventDefault();
+		$(document).on('click', 'a[href^="#"]', function (event) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 500);
 		});
 		</script>
 
